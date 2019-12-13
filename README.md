@@ -14,4 +14,4 @@ Run `npm run start` or `node index.js` for a dev server.
 
 Navigate to `http://localhost:3000/`.
 
-To get the APIs Details see the api.txt file from root folder
+To get the APIs Details see the APIsDetails.txt file from root folder.

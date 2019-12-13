@@ -1,4 +1,7 @@
-In root folder there is json file named 'userData.json' that have containing all user's data.
+In root folder there is a json file named 'userData.json' that have containing all user's data.
+
+Note: This userData.json file using as database.
+
 Warning: Don't remove or move this file.
 
 
