@@ -1,0 +1,92 @@
+In root folder there is json file named 'userData.json' that have containing all user's data.
+Warning: Don't remove or move this file.
+
+
+APIs Details :
+	You can hit APIs from any API Development Environment like Postman.
+	Header for all APIs must { Content-Type : application/json }
+
+	1. create user : 
+		API : localhost:3000/user/create
+		Method : POST
+		requirements : 
+			Body :	{
+	
+					"email" : "Your email",(Mandatory)
+					"password" : "Your password", (Mandatory)
+					"name" : "your name",(Optional)
+					"city" : "your city", (Optional)
+					"mobile" : "your mobile number" (Optional)
+				}
+
+	2. login user :
+		API : localhost:3000/user/login
+		Method : POST
+		requirements :
+			Body :	{
+	
+					"email" : "Your email",(Mandatory)
+					"password" : "Your password", (Mandatory)
+				}
+		
+		You will get the token in response that you have to copy and paste in headers for authorization.
+
+	3. get all user :
+		API : localhost:3000/user/all
+		Method : GET
+		requirements : 
+			Headers : {
+					Authorization : "Bearer your_token"
+				}
+		You will get all user array in reponse
+
+	4. get single user :
+		API : localhost:3000/user/userid (e.g userid = 2)
+		Method : GET
+		requirements : 
+			Headers : {
+					Authorization : "Bearer your_token"
+				}
+		You will get single user detail in reponse
+
+	5. update user : 
+		API : localhost:3000/user/update
+		Method : POST
+		requirements : 
+			Headers : {
+					Authorization : "Bearer your_token",
+					userid : 2 (Userid of user to be updated)
+				}
+			Body :	{
+					"name" : "your name",
+					"city" : "your city",
+					"mobile" : "your mobile number"
+				}
+
+	6. delete user : 
+		API : localhost:3000/user/userid (Userid of user to be deleted)
+		Method : Delete
+		requirements : 
+			Headers : {
+					Authorization : "Bearer your_token"
+				}
+
+	7. forgot password : 
+		API : localhost:3000/user/forgotpassword
+		Method : post
+		requirements :
+			Body :	{
+					"email" : "Your email",(Mandatory)
+				}
+		You will get the password reset token that you have to use for reset your password
+
+	8. reset password : 
+		API : localhost:3000/user/resetpassword
+		Method : post
+		requirements :
+			Body :	{
+					"email" : "Your email",(Mandatory),
+					"newPassword" : "Your new password",
+					"passwordToken" "your reset password token"
+				}
+		After successful response you can login with new password.
