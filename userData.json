@@ -1,0 +1,34 @@
+[
+    {
+        "id": 2,
+        "email": "grv@gmail.com",
+        "password": "$2a$10$Mm8NLS9bHua14nXhQAtkDulBbmtUPdONVAT3ZfDggLPDS7.LYXbe6",
+        "name": "Grv Garry",
+        "city": "Hsp",
+        "mobile": "9090889090"
+    },
+    {
+        "id": 3,
+        "email": "garry@gmail.com",
+        "password": "$2a$10$XCqnBNGAcilWQk0MjcbxhuEADJVnma5yZPEEOR8JlVq7TyyoHNbz6",
+        "name": "Garry",
+        "city": "Hoshiarpur",
+        "mobile": "9090009090"
+    },
+    {
+        "id": 4,
+        "email": "garry123@gmail.com",
+        "password": "$2a$10$Hz7NXwSWYrR2itfKYyziRO13.yUfGaQfGdcyNSPeVDOzPoFcKS/Si",
+        "name": "Garry",
+        "city": "Hoshiarpur",
+        "mobile": "9090009090"
+    },
+    {
+        "id": 5,
+        "email": "roop@gmail.com",
+        "password": "$2a$10$wfhdPL9cBeachJlFFNPpD.0Qp7o3CvtxQsDKMBcDhWRJMYQDg0duq",
+        "name": "Roop",
+        "city": "Mohali",
+        "mobile": "8897709090"
+    }
+]
